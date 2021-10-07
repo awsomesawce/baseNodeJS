@@ -1,0 +1,30 @@
+{
+  "name": "basenodejs",
+  "version": "0.1.0",
+  "description": "Base nodejs packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "base"
+  ],
+  "author": "Carl C",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.6.3",
+    "core-js": "^3.18.2",
+    "immutable": "^4.0.0-rc.15",
+    "json5": "^2.2.0",
+    "jsonfile": "^6.1.0",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "picomatch": "^2.3.0",
+    "pino": "^6.13.3",
+    "ramda": "^0.27.1",
+    "set-value": "^4.1.0",
+    "shelljs": "^0.8.4",
+    "yallist": "^4.0.0"
+  }
+}
