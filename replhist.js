@@ -61,3 +61,5 @@ process.execPath,
 [`-e`, `console.log('subprocess stdio output')`]
 )
 console.log('pid is: ', sp.pid)
+notes
+notes.recent = ["globby", "got"]
