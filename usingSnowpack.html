@@ -1,0 +1,18 @@
+<!-- Example 1: Preact in HTML (no build tooling required!) -->
+<!-- View Code: https://glitch.com/edit/#!/familiar-warm-monday -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="module">
+      import * as preact from 'https://cdn.skypack.dev/preact';
+      import { h, Component, render } from 'https://cdn.skypack.dev/preact';
+      import htm from 'https://cdn.skypack.dev/htm';
+      const html = htm.bind(h);
+
+      const app = html`<h1>Hello World!</h1>
+      <h2>not working</h2>
+      <p>Skypack is not working the way I want it to.</p>`;
+      render(app, document.body);
+    </script>
+  </body>
+</html>

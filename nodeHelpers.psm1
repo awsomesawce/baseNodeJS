@@ -6,6 +6,10 @@ Helpers for NodeJS
 #>
 
 
+$GitHubDir = "~/Documents/GitHub"
+$script:GitHubDirObj = (Get-Item $GitHubDir)
+
+function getPackageJSONObj {
 <#
 .Description
 Converts package.json file in current directory as a hashtable
@@ -27,5 +31,6 @@ else {
         return $pkgjson
     }
     else { Write-Error "No ./package.json found in current dir" }
+}
 }
 

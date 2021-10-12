@@ -32,4 +32,9 @@ let myFullPkgs = () => {
     })
 }
 let fullNames = myFullPkgs()
-console.log(fullNames)
+
+notes.fullNames = {
+    note: "Assigned full path names of node_modules to 'myFullPkgs'",
+    myFullPkgs: myFullPkgs
+}
+console.log(notes.fullNames)
