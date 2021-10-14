@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // This file simply assigns the full pathnames of each node_modules dir into
 // an array.
+// STATUS: It works!
 // Working with VSCode and node
 
 'use strict';
@@ -34,7 +35,8 @@ let myFullPkgs = () => {
 let fullNames = myFullPkgs()
 
 notes.fullNames = {
-    note: "Assigned full path names of node_modules to 'myFullPkgs'",
-    myFullPkgs: myFullPkgs
+    note: `Assigned full path names of node_modules to 'fullNames'.
+    Used 'myFullPkgs' output.`,
+    myFullPkgs: fullNames
 }
 console.log(notes.fullNames)

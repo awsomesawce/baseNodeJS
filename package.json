@@ -1,22 +1,30 @@
 {
   "name": "basenodejs",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Base nodejs packages",
-  "main": "index.js",
+  "main": "replhist.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx esbuild --format=\"esm\" --platform=\"node\" --metafile=\"compiledTS/metafile.json\" --sourcemap srcTS/*.ts"
   },
   "keywords": [
     "node",
-    "base"
+    "base",
+    "experimental",
+    "lodash",
+    "discovery"
   ],
   "author": "Carl C",
   "license": "MIT",
   "dependencies": {
     "ajv": "^8.6.3",
+    "collections": "^5.1.12",
+    "colors": "^1.4.0",
     "cross-spawn": "^7.0.3",
     "dotenv": "^10.0.0",
+    "esbuild": "^0.13.6",
     "execa": "^5.1.1",
+    "fs-extra": "^10.0.0",
     "globby": "^12.0.2",
     "got": "^11.8.2",
     "immutable": "^4.0.0-rc.15",
@@ -24,17 +32,22 @@
     "json5": "^2.2.0",
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.21",
+    "micromatch": "^4.0.4",
     "minimist": "^1.2.5",
+    "minimist-options": "^4.1.0",
     "picomatch": "^2.3.0",
     "pino": "^6.13.3",
     "ramda": "^0.27.1",
     "set-value": "^4.1.0",
     "shelljs": "^0.8.4",
-    "typescript": "^4.4.3",
     "yallist": "^4.0.0"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/minimist": "^1.2.2",
     "snowpack": "^3.8.8",
-    "standard": "^16.0.4"
+    "standard": "^16.0.4",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   }
 }

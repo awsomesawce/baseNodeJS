@@ -1,3 +1,9 @@
+# BaseNodeJS Git ignore file
+
+# ignore vim backups
+*.*~
+..*
+*~
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
@@ -128,4 +134,4 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
-./TEMP/
+TEMP/
