@@ -3,9 +3,11 @@
   "version": "0.3.0",
   "description": "Base nodejs packages",
   "main": "replhist.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx esbuild --format=\"esm\" --platform=\"node\" --metafile=\"compiledTS/metafile.json\" --sourcemap srcTS/*.ts"
+    "build": "npx esbuild --format=\"esm\" --platform=\"node\" --metafile=\"compiledTS/metafile.json\" --sourcemap srcTS/*.ts",
+    "repl": "node"
   },
   "keywords": [
     "node",
@@ -17,7 +19,8 @@
   "author": "Carl C",
   "license": "MIT",
   "dependencies": {
-    "ajv": "^8.6.3",
+    "ajv": "^8.8.2",
+    "bytes": "^3.1.0",
     "collections": "^5.1.12",
     "colors": "^1.4.0",
     "cross-spawn": "^7.0.3",
@@ -32,9 +35,12 @@
     "json5": "^2.2.0",
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.21",
+    "markdown-it": "^12.3.0",
     "micromatch": "^4.0.4",
+    "mime-db": "^1.50.0",
     "minimist": "^1.2.5",
     "minimist-options": "^4.1.0",
+    "mongoose": "^6.0.11",
     "picomatch": "^2.3.0",
     "pino": "^6.13.3",
     "ramda": "^0.27.1",
