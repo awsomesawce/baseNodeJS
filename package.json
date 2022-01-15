@@ -45,7 +45,7 @@
     "pino": "^6.13.3",
     "ramda": "^0.27.1",
     "set-value": "^4.1.0",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "yallist": "^4.0.0"
   },
   "devDependencies": {
