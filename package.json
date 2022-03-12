@@ -46,7 +46,7 @@
     "mongoose": "^6.0.11",
     "picomatch": "^2.3.0",
     "pino": "^6.13.3",
-    "ramda": "^0.27.1",
+    "ramda": "^0.27.2",
     "set-value": "^4.1.0",
     "shelljs": "^0.8.5",
     "yallist": "^4.0.0"
