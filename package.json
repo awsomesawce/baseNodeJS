@@ -41,7 +41,7 @@
     "markdown-it": "^12.3.2",
     "micromatch": "^4.0.4",
     "mime-db": "^1.50.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "minimist-options": "^4.1.0",
     "mongoose": "^6.0.11",
     "picomatch": "^2.3.0",
