@@ -1,0 +1,5 @@
+= Asciidocting
+:title: Asciidocting
+
+== Testing Asciidoc
+
