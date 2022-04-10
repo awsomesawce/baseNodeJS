@@ -15,6 +15,6 @@ localBinContent
 const crossSpawn = require('cross-spawn')
 
 
-let files = x();
-console.log(files);
+//let files = x();
+//console.log(files);
 let one = immutable.Map({"key": "val"});

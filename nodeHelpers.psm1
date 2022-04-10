@@ -67,3 +67,14 @@ else {
 }
 }
 
+function Get-FileNames {
+
+[cmdletbinding()]
+param(
+    [Parameter()][string]$Path = "."
+)
+
+Write-Output "Reading $Path and spitting out file and dir names"
+return "$((ls $Path).Name)"
+
+}
