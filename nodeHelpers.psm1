@@ -78,3 +78,22 @@ Write-Output "Reading $Path and spitting out file and dir names"
 return "$((ls $Path).Name)"
 
 }
+
+
+function Get-NodeModules {
+<#
+.DESCRIPTION
+If `./node_modules` exists, return a hashtable representing it in multiple ways
+which can be further modified and inspected.
+#>
+param()
+$Local:nodeModulesString = "$PWD/node_modules"
+$Local:nodeModulesItem = if (test-path $Local:nodeModulesString) {Get-Item $Local:nodeModulesString} else {throw "node_modules does not exist in this dir"}
+$Local:nodeModulesDirs = $Local:nodeModulesItem.GetDirectories()
+return @{
+nodeModulesDirs = $Local:nodeModulesDirs
+nodeModulesString = $Local:nodeModulesString
+nodeModulesItem = $Local:nodeModulesItem
+}
+}
+
