@@ -42,9 +42,10 @@
     "js-yaml": "^4.1.0",
     "json5": "^2.2.0",
     "jsonfile": "^6.1.0",
+    "kleur": "^4.1.4",
     "lodash": "^4.17.21",
     "markdown-it": "^12.3.2",
-    "marked": "^4.0.12",
+    "marked": "^4.0.14",
     "micromatch": "^4.0.4",
     "mime-db": "^1.50.0",
     "minimist": "^1.2.5",
@@ -60,8 +61,12 @@
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
     "@types/minimist": "^1.2.2",
+    "@types/node": "*",
     "standard": "^16.0.4",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
+  },
+  "optionalDependencies": {
+    "@babel/highlight": "^7.17.9"
   }
 }

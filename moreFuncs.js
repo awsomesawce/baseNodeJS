@@ -1,3 +1,8 @@
+#!/usr/bin/env node
+
+const fs = require('fs-extra');
+const path = require('path');
+
 function ls (dir) {
 if (!dir) {
 console.log(fs.readdirSync("."));
@@ -5,3 +10,5 @@ console.log(fs.readdirSync("."));
 return fs.readdirSync(dir);
 }
 }
+
+console.log(ls());
