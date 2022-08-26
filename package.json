@@ -50,7 +50,7 @@
     "mime-db": "^1.50.0",
     "minimist": "^1.2.5",
     "minimist-options": "^4.1.0",
-    "mongoose": "^6.0.11",
+    "mongoose": "^6.4.6",
     "picomatch": "^2.3.0",
     "pino": "^6.13.3",
     "ramda": "^0.27.2",
